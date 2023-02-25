@@ -28,7 +28,7 @@ sudo su <<- EOF
   for i in \$tools;
   do
     cd \${home}/.config/src/\${i};
-    sed -i 's/cc/tcc/' config.mk
+    sed -i 's/cc/tcc/' config.mk;
     make clean install;
   done
 
