@@ -1,0 +1,3 @@
+# Ignore files related to my testing environment
+.vagrant
+Vagrantfile
