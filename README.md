@@ -46,6 +46,31 @@ or
 
 `startx`
 
+### Testing
+
+If you want to try this script quickly, without having to make a physical installation of Void Linux, you can use the testing environment I'm providing with the [Vagrantfile](./Vagrantfile) and [provision.sh](./provision.sh) files.
+
+The Vagrantfile has the specifications for the VM to be created.
+
+The provision.sh script runs after the VM is created to automatically execute the necessary steps to test the suckless-void.sh script.
+
+1. Make sure you have VirtualBox and Vagrant installed:
+
+* [Install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [Install Vagrant](https://developer.hashicorp.com/vagrant/downloads)
+
+2. Run the following command to create the VM:
+
+`vagrant up`
+
+The virtualbox GUI will appear and, after all commands of the provision.sh and suckless-void.sh scripts have been executed, you can test the desktop by running inside the VM:
+
+`startx`
+
+3. To destroy the VM, run:
+
+`vagrant destroy -f`
+
 ## License
 
 Licensed under the [GNU General Public License v2.0](./LICENSE)
