@@ -9,7 +9,7 @@ sudo su <<- EOF
   # Variables
   user="$user"
   home="$home"
-  dependencies="base-devel tcc xorg libXft-devel libX11-devel libXinerama-devel xf86-video-intel xinit xrdb xrandr unclutter xclip redshift xbacklight alsa-utils vim tmux lynx pcmanfm"
+  dependencies="base-devel tcc xorg libXft-devel libX11-devel libXinerama-devel xf86-video-intel xinit xrdb xrandr unclutter xclip redshift xbacklight alsa-utils vim tmux lynx pass pcmanfm"
   tools="dwm dmenu st slstatus"
 
   # Upgrade system and install dependencies
