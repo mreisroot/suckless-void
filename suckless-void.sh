@@ -30,7 +30,7 @@ sudo su <<- EOF
   done
 
   # Copy .xinitrc \${home}/.xinitrc
-  cp .xinitrc \${home}/.xinitrc
+  cp \${home}/suckless-void/.xinitrc \${home}/.xinitrc
 
   # Adjusting permissions
   chown -R \${user}:\${user} \${home}/.config
