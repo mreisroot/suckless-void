@@ -63,11 +63,20 @@ The provision.sh script runs after the VM is created to automatically execute th
 
 `vagrant up`
 
+3. Login credentials
+
+```sh
+login: root
+password: vagrant
+```
+
+4. Starting the window manager
+
 The virtualbox GUI will appear and, after all commands of the provision.sh and suckless-void.sh scripts have been executed, you can test the desktop by running inside the VM:
 
 `startx`
 
-3. To destroy the VM, run:
+5. To destroy the VM, run:
 
 `vagrant destroy -f`
 
