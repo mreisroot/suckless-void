@@ -9,13 +9,11 @@ sudo su <<- EOF
   # Variables
   user="$user"
   home="$home"
-  dependencies="base-devel tcc xorg libXft-devel libX11-devel libXinerama-devel xf86-video-intel xinit xrdb xrandr unclutter xclip redshift xbacklight alsa-utils pcmanfm vim tmux"
+  dependencies="base-devel tcc xorg libXft-devel libX11-devel libXinerama-devel xf86-video-intel xinit xrdb xrandr unclutter xclip redshift xbacklight alsa-utils vim tmux lynx pcmanfm"
   tools="dwm dmenu st slstatus"
 
-  # Install dependencies
-  xbps-install -Syy
-  xbps-install -u --yes xbps
-  xbps-install -Syu --yes
+  # Upgrade system and install dependencies
+  xbps-install -Syyu --yes
   xbps-install -S --yes \$dependencies
 
   # Clone repos
@@ -28,7 +26,6 @@ sudo su <<- EOF
   for i in \$tools;
   do
     cd \${home}/.config/src/\${i};
-    sed -i 's/cc/tcc/' config.mk;
     make clean install;
   done
 
