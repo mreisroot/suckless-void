@@ -18,8 +18,8 @@ In this project, I'm using the forks I made of these programs, but feel free to 
 Make sure your machine has git installed:
 
 ```sh
-sudo xbps-install -Syy
-sudo xbps-install -S git
+sudo xbps-install -Su --yes xbps
+sudo xbps-install -S --yes git
 ```
 
 2. Clone this project
